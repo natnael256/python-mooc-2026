@@ -15,7 +15,7 @@ The course is divided into two modules totaling 10 ECTS credits:
 - [✅] **Part 2:** Programming terminology
 - [✅] **Part 3:** Loops
 - [✅] **Part 4:** For loops, lists, and strings
-- [ ] **Part 5:** Tuples, dictionaries, and references
+- [✅] **Part 5:** Tuples, dictionaries, and references
 - [ ] **Part 6:** Reading and writing files
 - [ ] **Part 7:** Modules and handling exceptions
 

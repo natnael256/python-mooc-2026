@@ -14,3 +14,8 @@ __pycache__/
 
 # Ignore course configuration
 course_config.toml
+
+
+#output files
+
+**.txt
