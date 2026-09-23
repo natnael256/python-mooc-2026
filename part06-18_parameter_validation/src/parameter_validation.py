@@ -1,39 +1,30 @@
-# when except is use as a blanket it will also hide a syntax errors. 
-
-# Write your solution here
-# try:
-#     with open("src/text.txt") as my_file:
-
-#         for line in myfile:
-#             print(line)
-# except: 
-#     print("There was an error when reading the file.")
-
-# with open("src/text.txt") as my_file:
-
-#     for line in my_file:
-#         print(line)
 
 
-def new_person(name_input: str, age: int):
+with open ("src/lottery_numbers.csv") as my_file:
 
-    return_data = ()
-    name_content = name_input.split(" ")
-    print (name_content)
-    print(len(name_content))
-    print(len(name_input))
+    content = []
+    for line in my_file:
+        line = line.strip()
+        value = line.split(';')
+        content.append(value)
+
+valid = []
+final_valid = []
 
 
-    
-    if len(name_content) < 2  or len(name_input) > 40:
-        raise ValueError ("The input is invalid")
 
-    if age < 0 or age > 150:
-        raise ValueError ("The input is invalid")
+for i in content:
+    skip =False
+    for j in i[0].split(" "):
+        try:
+            week_num = int(j[2])
+        except ValueError:
+            pass
+            skip = True
+            break
+    num_part = i[1].replace(',','')
+    if skip == False and len(num_part) == 7:
+        if num_part.isdigit():
+            final_valid.append(i)
+    print(final_valid)
         
-    return_data = (name_input, age)
-    return(return_data)
-
-
-if __name__ == "__main__":
-    new_person('James Jameson', 32)
