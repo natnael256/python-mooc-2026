@@ -17,7 +17,25 @@ for item in \
   "part06-16_dictionary_file dictionary_file" \
   "part06-17_read_input read_input" \
   "part06-18_parameter_validation parameter_validation" \
-  "part06-19_incorrect_lottery_numbers incorrect_lottery_numbers"; do
+  "part06-19_incorrect_lottery_numbers incorrect_lottery_numbers" \
+  "part07-01_hypotenuse hypotenuse" \
+  "part07-02_special_characters special_characters" \
+  "part07-03_fractions fractions" \
+  "part07-04_lottery_numbers lottery_numbers" \
+  "part07-05_password_generator_part_1 password_generator_part_1" \
+  "part07-06_password_generator_part_2 password_generator_part_2" \
+  "part07-07_dice_roller dice_roller" \
+  "part07-08_random_words random_words" \
+  "part07-09_how_old how_old" \
+  "part07-10_valid_pic valid_pic" \
+  "part07-11_screen_time screen_time" \
+  "part07-12_json_files json_files" \
+  "part07-13_course_statistics course_statistics" \
+  "part07-14_who_cheated who_cheated" \
+  "part07-15_who_cheated_2 who_cheated_2" \
+  "part07-16_spellchecker_2 spellchecker_2" \
+  "part07-17_string_helper string_helper" \
+  "part07-18_own_programming_language own_programming_language"; do
     set -- $item
     mkdir -p "$1/src" && touch "$1/src/$2.py"
 done
